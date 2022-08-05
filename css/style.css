@@ -157,14 +157,15 @@ button:focus {
 #contents {
     width: 100%;    /* 너비 */
     height: 300px;  /* 높이 */
+    margin-top: 20px;   /* 마진 추가 */
 }
 
 /* 탭 메뉴 영역 */
 #tabMenu {
     float: left;    /* 왼쪽으로 플로팅*/
     width: 600px;   /* 너비 */
-    height: 100%;
-    margin-top: 10px;
+    height: 100%;   /* 높이 */
+    margin-top: 10px;   /* 탭 메뉴 위쪽에 여백 두기 */
 }
 #tabMenu input[type="radio"] {
     display: none;
@@ -220,7 +221,45 @@ button:focus {
     float: right;   /* 오른쪽으로 플로팅 */
     width: 600px;   /* 너비 */
     height: 100%;   /* 높이 */
-    background-color: skyblue;
+    margin-top: 15px; /* 마진 추가 */
+}
+
+#links ul {
+    padding: 0; /* 패딩 */
+    overflow: hidden;   /* 넘치는 항목은 감춤 */
+}
+
+#links ul li {
+    float: left;    /* 가로로 배치 */
+    width: 33%; /* 세 항목의 영역을 균일하게 지정 */
+    text-align: center; /* 가운데 정렬 */
+    margin: 10px 0; /* 마진 */
+}
+
+#links ul li a span {
+    display: block; /* 블록 레벨로 지정 */
+    margin: 0 auto; /* 가운데 배치 */
+    width: 150px;   /* 가로 크기 */
+    height: 150px;  /* 세로 크기 */
+    border-radius: 100%;    /* 테두리를 둥글게 지정. border-radius: 150px도 가능 */
+    border: 1px solid #ddd; /* 테두리 스타일 */
+    line-height: 150px; /* 수직으로 중간에 오게 */
+}
+
+#quick-icon1 {
+    background-image: url('../images/icon-1.jpg');
+}
+#quick-icon2 {
+    background-image: url('../images/icon-2.jpg');
+}
+#quick-icon3 {
+    background-image: url('../images/icon-3.jpg');
+}
+
+#links ul li a p {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #666;
 }
 
 /* 푸터 영역 */
