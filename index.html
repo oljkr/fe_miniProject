@@ -19,13 +19,14 @@
         <nav>
           <ul id="topMenu">
             <li>
-              <a href="#">단체 여행 <span>▼</span></a>
+                <a href="#">단체 여행 <span>▼</span></a>
               <ul>
                 <li><a href="#">회사 연수</a></li>
                 <li><a href="#">수학 여행</a></li>
               </ul>
             </li>
-            <li><a href="#">맞춤 여행 <span>▼</span></a>
+            <li>
+                <a href="#">맞춤 여행 <span>▼</span></a>
                 <ul>
                     <li><a href="#">4.3 평화 기행</a></li>
                     <li><a href="#">곶자왈 체험</a></li>
@@ -39,7 +40,15 @@
         <!--nav end-->
       </header>
       <!--header end-->
-      <div id="slideShow">slideShow</div>
+      <div id="slideShow">
+        <div id="slides">
+            <img src="images/photo-1.jpg" alt="">
+            <img src="images/photo-2.jpg" alt="">
+            <img src="images/photo-3.jpg" alt="">
+            <button id="prev">&lang;</button>
+            <button id="next">&rang;</button>
+        </div>
+      </div>
       <!--id="slideShow" end-->
       <div id="contents">
         <div id="tabMenu">tabMenu</div>
@@ -52,5 +61,6 @@
       <!--footer end-->
     </div>
     <!--id="container" end-->
+    <script src="js/slideshow.js"></script>
   </body>
 </html>
